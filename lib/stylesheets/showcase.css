@@ -1,0 +1,61 @@
+/* Showcase, Simple display case for images. */
+
+/* undohtml.css (CC) 2004 Tantek Celik. Some Rights Reserved. */
+:link,:visited { text-decoration:none }
+ul,ol { list-style:none }
+h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input,td,th{ margin:0; padding:0 }
+a img,:link img,:visited img { border:none }
+
+/* Styles for showcase. Copyright (c) 2008 Flurin Egger, DigitPaint, MIT Style License. */
+body{
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 11px;
+}
+
+#navigation{
+	background: url(../images/top.jpg) #ebebeb 0 0 repeat-x;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	position: fixed;
+}
+
+#navigation h1{
+	float: left;
+	border-right: 2px solid #aaa;
+	padding-right: 1em;
+	margin-right: 1em;
+}
+
+#screen-nr,
+#screen-title{
+	background: #bbb;
+	padding: 2px;
+	padding-right: 10px;
+	color: #000;
+}
+
+#screen-title{
+	font-weight: bold;
+}
+
+#screen-navigation{
+	border-left: 2px solid #aaa;	
+	padding-left: 1em;
+	margin-left: 1em;
+}
+#screen-pages a{
+	margin-right: 0.2em;
+}
+
+#images{
+	padding-top: 50px;
+	text-align: center;
+}
+
+a:link,
+a:visited{
+	color: #00d;
+	text-decoration: underline;
+}

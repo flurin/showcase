@@ -1,0 +1,44 @@
+<!-- Internet Explorer has to be in quirks mode, this comment just does that -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Your page title here</title>
+	<link rel="stylesheet" href="../lib/stylesheets/showcase.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<!--[if IE]>
+	<link rel="stylesheet" href="../lib/stylesheets/ie.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<![endif]-->	
+	<script src="../lib/javascript/mootools.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/javascript/showcase.js" type="text/javascript" charset="utf-8"></script>
+	
+</head>
+
+<body>
+
+<!-- <div id="navigation">
+  <h1 id="showcase-title">Your title here</h1>
+  This is screen: <span id="screen-nr">0</span>
+  <span id="screen-title">Screen title (will be replaced)</span>
+  <span id="screen-navigation">
+    <a href="#" onclick="s.previous();return false;">&lt; vorige</a>
+    <span id="screen-pages"></span>
+    <a href="#" onclick="s.next();return false;">volgende &gt;</a>
+  </span>
+</div> -->
+
+
+<h1 id="showcase-title">Your title here</h1>
+<div id="images">
+	<img src="case/img1.jpg" width="990" height="665" alt="Description 1" />
+	<img src="case/img2.jpg" width="990" height="665" alt="Description 2" />
+</div>
+
+<script type="text/javascript" charset="utf-8">
+	var s = new Showcase("images","showcase-title");
+</script>
+
+</body>
+</html>
