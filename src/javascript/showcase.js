@@ -81,7 +81,7 @@ var Showcase = new Class({
     this.screenNrEl.inject(navigation);
     navigation.appendText(" ");
 
-    this.titleEl = new Element("span",{"id": "screen-title"})
+    this.titleEl = new Element("span",{"id": "screen-title"});
     this.titleEl.inject(navigation);
 
     var screenNav = new Element("span", {"id": "screen-navigation"});
