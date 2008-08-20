@@ -1,3 +1,38 @@
 Showcase, Simple display case for images. 
 ==========================================
-Copyright (c) 2008 Flurin Egger, DigitPaint, MIT Style License.
+
+Showcase is a simple image display case for images. It can be used for many things, we at DigitPaint
+use it to quickly put up series of website mockup images to show to our clients. Some of our designer friends 
+use it to present rough sketches of their work to their clients. 
+
+Showcase isn't fancy but it:
+* Does not require serverside scripting (so you can just FTP it to your favorite host and it works)
+* Is very lightweight (packed with YUI Compressor it's about 30kB)
+* Degrades nicely on older browsers (even your aunt with her 486 PC and Internet Explorer 4 
+  can see the images (not tested though))
+* Is very easy to set up even without a lot HTML knowledge
+* It's very customizable (see the stylesheet and just hack away)
+
+Get started
+===========
+Currently only tested on OS X 10.4, requires rake. A pre-built package will be available
+for download later on.
+
+1. Clone this repository to your local computer
+2. (Optional) Download YUI Compressor 2.5.3 from http://www.julienlecomte.net/yuicompressor/ and put
+   the yuicompressor-2.3.5.jar in the vendor directory
+3. Type "rake build"
+4. Open build/index.html with your browser to see the sample showcase
+5. Add images to build/images and insert them into index.html (Just leave the ids on the H1 and the DIV)
+6. Upload to your favorite host
+
+Known issues
+============
+
+* Showcase doesn't show the images in Internet Explorer if the images aren't on a webserver. Once they're
+  uploaded and accessed through a webserver they should be fine.
+
+Copyright & license
+===================
+
+Copyright (c) 2008 Flurin Egger, DigitPaint, MIT Style License. (see MIT-LICENSE)
