@@ -20,7 +20,7 @@ var Showcase = new Class({
 		this.showcaseTitleEl = $(showcaseTitleEl);
 		this.images = $A([]);
 		this.container.getChildren().each(function(img){
-			if(img.get('tag') == "img" || img.hasClass("object")){this.images.push(img); img.dispose(); }
+			if(img.get('tag') == "img" || img.hasClass("object")){this.images.push(img); }
 		}.bind(this));
 		this.container.empty();
 		
@@ -28,7 +28,7 @@ var Showcase = new Class({
 		if(c){ this.current = c -1; } else {	this.current = 0;	}
 
 		this._create();
-		this.navigate(this.current);
+		this.navigate(this.current);	  
 	},
 	navigate : function(nr){
 		if(nr > this.images.length){nr = 0;}
@@ -41,7 +41,7 @@ var Showcase = new Class({
 		var title = $any(img.getProperty("title"),img.getProperty("alt"));
 
 		this.container.empty();
-		this.container.adopt(img.clone());
+		this.container.adopt(img);
 		this._setNrAndTitle(nr + 1,title);			
 		return true;
 	},
