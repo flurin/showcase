@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+
+require 'fileutils'
+include FileUtils
+
+target =  ARGV[0]
+
+# Basic parameter usage
+def usage!
+  puts "Usage: #{File.basename($0)} <directory>"
+  puts "  This will create a new showcase with everything"
+  puts "  in the right place in <directory>"
+  exit
+end
+
+if target.to_s.strip == ""
+  usage!
+end
+
+if File.exist?(target)
+  puts "The directory or file \"target\" already exists, please choose another"
+  usage!
+end
+
+mkdir_p target
+cp_r Dir[File.dirname(__FILE__) + "/../release/*"], target
+cp Dir[File.dirname(__FILE__) + "/../README"], target
+
+puts "Created new showcase in #{target}"
+puts "See #{target}/README for more information"
