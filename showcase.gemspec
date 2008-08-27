@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
     s.platform  =   Gem::Platform::RUBY
     s.name      =   "showcase"
-    s.version   =   "0.9.0"
+    s.version   =   "0.9.1"
     s.date      =   "2008-08-27"
     s.author    =   "Flurin Egger"
     s.email     =   "flurin@digitpaint.nl"
@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
     s.bindir = 'bin'
     s.executables << "showcase"
 
-#    s.homepage = "http://github/schacon/ticgit"
+    s.homepage = "http://github.com/flurin/showcase"
 
     s.require_paths = ["bin"]
 end
