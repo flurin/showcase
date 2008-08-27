@@ -51,7 +51,7 @@ task :build do
   index_html.gsub!(/^\s*<script.*?src.*?mootools.js[^<]+<\/script>$/,'')
   
   {"../src/stylesheets/showcase.css" => "showcase/showcase.css",
-   "../src/stylesheets/id.css" => "showcase/showcase_ie.css",
+   "../src/stylesheets/ie.css" => "showcase/showcase_ie.css",
    "../src/javascript/showcase.js" => "showcase/showcase.js"}.each do |orig,repl|
      index_html.gsub!(orig,repl)
   end
