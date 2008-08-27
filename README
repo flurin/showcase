@@ -15,6 +15,27 @@ Showcase isn't fancy but it:
 
 Get started
 ===========
+On Apple OS X >= 10.4 or any other system that has ruby and rubygems installed:
+
+1. Open a terminal and run "sudo gem install flurin-showcase --source=http://gems.github.com"
+2. Now run "showcase <targetdirectory>"
+3. Showcase should now have created a sample directory: add images to index.html at will. 
+4. Upload the whole directory to a host of your choice.
+
+A downloadable zip version that doesn't require ruby and works cross platform will be available shortly.
+
+Some notes
+==========
+
+* Customize the <title></title> tag and the Showcase title: <h1 id="showcase-title"></h1>
+* It's best to leave all the ID's of the HTML tags intact, stuff might break if they are changed.
+* Add a "alt" attribute to images to have them displayed in the navigation bar
+* You can add images at will, keep in mind that you should not add images that are too big, they
+  won't work very well on the internet because of long load times.
+
+
+For developers
+==============
 Currently only tested on OS X 10.4, requires rake. A pre-built package will be available
 for download later on.
 
@@ -26,11 +47,6 @@ for download later on.
 5. Add images to build/images and insert them into index.html (Just leave the ids on the H1 and the DIV)
 6. Upload to your favorite host
 
-Known issues
-============
-
-* Showcase doesn't show the images in Internet Explorer if the images aren't on a webserver. Once they're
-  uploaded and accessed through a webserver they should be fine.
 
 Copyright & license
 ===================
