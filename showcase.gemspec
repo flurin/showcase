@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
     s.platform  =   Gem::Platform::RUBY
     s.name      =   "showcase"
-    s.version   =   "0.9.1"
+    s.version   =   "0.9.2"
     s.date      =   "2008-08-27"
     s.author    =   "Flurin Egger"
     s.email     =   "flurin@digitpaint.nl"
